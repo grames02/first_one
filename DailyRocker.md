@@ -1,5 +1,5 @@
 # DailyRocker
-The place for music lovers to come together!
+### The place for music lovers to come together!
 
 
 
@@ -12,15 +12,21 @@ My website is for music educational & entertainment purposes. Every week it will
 ## How Technology Will Be Utilized:
 ### HTML
 Will have proper HTML formatting for web page. And additional pages for the musician leaderboard, and trivia game.
+
 ### CSS
+
 
 ### React
 Allow users to vote on artists they like/dislike. And the trivia question.
+
 ### Service
+
 
 ### DB/Login
 
+
 ### WebSocket
+
 
 ## Early Concept of DailyRocker.com
 ![Screenshot 2025-01-14 201122](https://github.com/user-attachments/assets/73a1f5ac-c5fa-4000-85a4-4b449d7f50eb)
