@@ -83,9 +83,7 @@ My Input HTML:
           <option selected>option2</option>
           <option>option3</option>
         </select>
-      </li>
-      
-      
+      </li> 
       <li>
         <label for="optgroup">OptGroup: </label>
         <select id="optgroup" name="varOptGroup">
@@ -99,7 +97,6 @@ My Input HTML:
           </optgroup>
         </select>
       </li>
-      
       <li>
         <label for="optgroup">OptGroup2: </label>
         <select id="optgroup" name="varOptGroup">
@@ -113,8 +110,6 @@ My Input HTML:
           </optgroup>
         </select>
       </li>
-      
-      
       <li>
         <fieldset>
           <legend>checkbox</legend>
@@ -126,7 +121,6 @@ My Input HTML:
           <input type="checkbox" id="checkbox3" name="varCheckbox" value="checkbox3" />
         </fieldset>
       </li>
-      
        <li>
         <fieldset>
           <legend>checkbox2</legend>
@@ -138,8 +132,6 @@ My Input HTML:
           <input type="checkbox" id="checkbox3" name="varCheckbox" value="checkbox3" />
         </fieldset>
       </li>
-      
-      
       <li>
         <fieldset>
           <legend>radio</legend>
@@ -151,7 +143,6 @@ My Input HTML:
           <input type="radio" id="radio3" name="varRadio" value="radio3" />
         </fieldset>
       </li>
-      
       <li>
         <fieldset>
           <legend>radio2</legend>
@@ -163,7 +154,6 @@ My Input HTML:
           <input type="radio" id="radio3" name="varRadio" value="radio3" />
         </fieldset>
       </li>
-      
       <li>
         <!-- Submit form with POST method and enctype="multipart/form-data" to send file contents. -->
         <label for="file">File: </label>
@@ -229,7 +219,6 @@ My Input HTML:
       <!-- This doesn't show up to the user, but allows the form to send associated data. -->
       <input type="hidden" id="secretData" name="varSecretData" value="#ff0000" />
     </ul>
-
     <button type="submit">Submit</button>
   </form>
 </body>
