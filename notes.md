@@ -1,3 +1,12 @@
+Below I've included all my thoughts thus far. As of right now, my main challenge is knowing how to make things look good.
+
+
+
+
+
+
+
+
 My Structure HTML:
 
 <body>
