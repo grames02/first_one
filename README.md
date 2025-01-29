@@ -36,3 +36,5 @@ I went into the Simon example, and swapped out a lot. I mainly used the formula 
 I am excited to keep learning. I created sections such as: Past Artists, Top Artists, and a fun Trivia Game. All of these will be more fleshed out in the future.
 
 One thing that took me FOREVER!!!!! Was getting it to publish properly. I didn't see the note about PowerShell.... Eventually, I finally changed the terminal and was able to publish it properly.
+
+This is my website link: https://startup.dailyrocker.click/
