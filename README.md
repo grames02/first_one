@@ -31,10 +31,22 @@ The votes will be viewable for all users on the leaderboard page.
 
 
 # With the HTML Deliverable
-## Main Things I did
-I went into the Simon example, and swapped out a lot. I mainly used the formula given and renamed things for my page. It actually worked fairly well.
-I am excited to keep learning. I created sections such as: Past Artists, Top Artists, and a fun Trivia Game. All of these will be more fleshed out in the future.
+## Main Things I did:
+I went into the Simon example and swapped out a lot. I mainly used the formula given and renamed things for my page. It actually worked fairly well.
+I am excited to keep learning. I created sections such as Past Artists, Top Artists, and a fun Trivia Game. All of these will be more fleshed out in the future.
 
-One thing that took me FOREVER!!!!! Was getting it to publish properly. I didn't see the note about PowerShell.... Eventually, I finally changed the terminal and was able to publish it properly.
+## Experience:
+After going through the initial tasks, I downloaded the Simon files and began to become familiar with them. From looking at the layout, it all made sense to me. I decided to utilize the Simon layout for my website. They both include four pages, and I could see similarities between Simon and how I would want my website to look. So I went through and gutted out all the unnecessary code, and began to create the layout for my eventual website. This included the index page, past artist page, top artist page, and the trivia game page. My eventual goal is that users will be able to vote on these artists. I also included a link to the artist's wikipedia page and a link to one of their albums on Spotify.
 
+One third-party resource I plan to utilize is Spotify. I think it'd be cool if you could listen to a clip of one of the artist's songs. Just a quick little sample on the page. I have yet to dive into the logistics, but it's my plan as of now.
+
+## Realizations:
+One thing I find fascinating is the organization of HTML. It makes a lot more sense than I thought it would. Oftentimes when going into the world of coding, it can be challenging to know where to begin. Or rather how to make sense of it all.
+
+However, when it comes to HTML, it reminds me of writing an essay. The simple layout of the header, body, and footer all click with me. When writing my webpages I made sure to keep the heading and footer uniform across all three pages. While I could change the body to my liking.
+
+## Lesson learned:
+One thing that took me forever, was getting it to publish properly. I didn't see the note about PowerShell. Eventually, I finally changed the terminal and was able to publish it properly.
+
+## Deliverable:
 This is my website link: https://startup.dailyrocker.click/
