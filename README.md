@@ -50,3 +50,31 @@ One thing that took me forever, was getting it to publish properly. I didn't see
 
 ## Deliverable:
 This is my website link: https://startup.dailyrocker.click/
+
+# With the CSS Deliverable
+## Main Things I did:
+After going through all the steps listed in the instructions, I reviewed the CSS files for the Simon website. By tinkering around, I came to better understand how to use CSS with HTML.
+
+## Experience:
+My experience was fairly positive. I think the main things I struggled with was trying to center different things. Throughout the process I envisioned different features being in different spots, and initally found moving them around to be tedious. One other thing I did was find a logo that I liked for my website. I converted this image to an ico file, and set it as the logo for all my websites pages.
+
+## Realizations:
+Through this experience, I realized that the organization of HTML pages are crucial. Otherwise trying to implement CSS can be a major headache. This led me to reorganize many of the sections throughout my HTML code.
+
+## Lesson learned:
+Through this experience I realized that I want to do better at organizing my code the first time (in order to simplify the process for applying CSS elements).
+
+## Delivarable:
+Here is my website link: https://startup.dailyrocker.click/home.html
+I've also included the updated code for my website pages and their css pages in different pages here on GitHub.
+
+# With the React Phase 1 Deliverable
+## Main Things I did:
+
+## Experience:
+
+## Realizations:
+
+## Lesson learned:
+
+## Delivarable:
