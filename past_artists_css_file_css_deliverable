@@ -1,0 +1,14 @@
+main {
+  position: relative;
+}
+
+section {
+  table-layout: auto;
+  border: 1cap;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
