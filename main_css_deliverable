@@ -1,0 +1,95 @@
+body {
+  /* display: flex; */
+  flex-direction: column;
+  min-width: 375px;
+  border-bottom: solid rgb(49, 56, 152) thin;
+}
+
+header {
+  flex: 0 80px;
+  border-bottom: solid rgb(49, 56, 152) thick;
+}
+
+
+.top-right-image {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 600x;
+  height: auto;
+  border: 10;
+}
+
+section {
+  background: #ffffff;
+  padding: 0.25em;
+  margin-bottom: 0.5em;
+  border-left: solid 1em #414deb;  
+}
+
+
+
+main {
+  flex: 1 calc(100vh - 110px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 200px;
+  grid-gap: 1em;
+  color: blue;
+}
+
+
+.middle-image {
+  position:relative;
+  display: flex;
+  right: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+footer {
+  flex: 0 30px;
+}
+
+menu {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  /*  overwrite Bootstrap so the menu does not wrap */
+  flex-direction: row !important;
+  list-style: none;
+}
+
+.navbar-brand {
+  padding-left: 0.3em;
+  border-bottom: solid rgb(49, 56, 152) thin;
+}
+
+menu .nav-item {
+  padding: 0 0.3em;
+}
+
+footer a {
+  float: right;
+}
+
+@media (max-height: 600px) {
+  header {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  main {
+    flex: 1 100vh;
+  }
+}
