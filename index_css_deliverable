@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8" />
+    <!-- Tell browsers not to scale the viewport automatically -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DailyRocker</title>
+    <link rel="icon" href="record_logo_ruT_icon.ico" />
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Include bootstrap CSS framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+</head>
+
+
+<body class="bg-dark text-light">
+    <!-- Use header, main, and footer elements to give semantic structure -->
+    <header>
+      <h1>DailyRocker.click<sup>&reg;</sup></h1>
+      <h2>George Ames</h2>
+      <h3>Current Logged in User - George Ames</h3>
+
+      
+      <!-- Navigation elements -->
+      <nav>
+        <menu>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="top_albums.html">Top Albums</a></li>
+          <li><a href="past_artists.html">Past Artists</a></li>
+          <li><a href="trivia_game.html">Trivia Game</a></li>
+        </menu>
+      </nav>
+      
+
+      <form>
+        <div>
+          <span>@</span>
+          <input type="text" placeholder="your@email.com" />
+        </div>
+        <div>
+          <span>🔒</span>
+          <input type="password" placeholder="password" />
+        </div>
+        <button type="submit">Login</button>
+        <button type="submit">Create</button>
+        <button type="submit">Logout</button>
+      </form>
+      <img src="record_logo_ruT_icon.ico" width="275" class="top-right-image">
+    </header>
+
+
+
+
+
+
+
+
+    <main>
+      <h1>This Week's Artist</h1>
+      <br><br>
+      <section>
+        <div>
+          <div class="container">
+            <h1>Billy Joel</h1>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Billy_Joel"><img src="https://learningleader.com/wp-content/uploads/2022/01/BIlly-Joel-Richard-E-Aaron-Redferns.jpg" width="250"></a></div>
+            <div class="card"><img src="https://www.shutterstock.com/image-vector/music-video-play-bar-icon-260nw-2257072159.jpg" width="400"></div>
+            <div class="card"><a href="https://open.spotify.com/album/3IILMjMMnoN2sKzgesX8KV"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8uU7k5jsTvGoHVHyuWfXlRVs9agVeIN2CSQ&s" width="300"/></a></div>
+          </section>
+
+      <section>
+        <div class="container">
+          <div class="card"><img src="https://banner2.cleanpng.com/20180531/csv/avo3s0rhq.webp" width="200"></div>
+          <div class="card"><img src="https://www.pngfind.com/pngs/m/190-1900259_dislike-youtube-png-red-facebook-thumbs-down-transparent.png" width="175"></div>
+        </div>
+      </section>
+    </main>
+  <br><br>
+  
+  
+  </body>
+
+    
+  <footer>
+    <span class="text-reset">George Ames</span>
+    <br />
+    <a href="https://github.com/grames02/first_one">GitHub</a>
+  </footer>
+</html>
