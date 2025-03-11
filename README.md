@@ -70,6 +70,7 @@ I've also included the updated code for my website pages and their css pages in 
 
 # With the React Phase 1 Deliverable
 ## Main Things I did:
+First of all, I watched the Simon React part 1 video, and followed the necessary steps. Upon completion, I then went back to my code and began to go through a siliar process. At first, I tried to do it all on my own simply through memory. However, I quickly realized that wasn't a very successful strategy. So I rewatched the video, and made necessary adjustments to my own code as I went through.
 
 ## Experience:
 
