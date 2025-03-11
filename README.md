@@ -79,9 +79,10 @@ I also went through and centered heading, and fixed the footer to all be on one 
 First of all, I watched the Simon React part 1 video, and followed the necessary steps. Upon completion, I then went back to my code and began to go through a siliar process. At first, I tried to do it all on my own simply through memory. However, I quickly realized that wasn't a very successful strategy. So I rewatched the video, and made necessary adjustments to my own code as I went through.
 
 ## Experience:
-The experience was fairly positive. I mainly utilized resources from Simon, but also had to make some changes. Specifically with things like my 
+The experience was fairly positive. I mainly utilized resources from Simon, but also had to make some changes. Specifically with things like my file names. In fact one of the challenges I was facing near the end was that my 'top_albums' page wouldn't go through to my React website. After digging deeper, I learned that it had to be Capitalized at the beginning for .jsx.
 
 ## Realizations:
+
 
 ## Lesson learned:
 
