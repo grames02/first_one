@@ -90,3 +90,7 @@ I also made an error in that I forgot to set one of the routes as the default. S
 The main lesson I learned was that the devil is in the details. I know I say that a lot, but I think it's an important lesson to learn over and over again (especially within Computer Science.) I also learned that formatting is different between files (especially .jsx).
 
 ## Delivarable:
+Here's the link to my website. I've also included all of my code in different files here within the repository. All of the files relating to this deliverable will be labeled: REACT 1, at the beginning.
+
+Website link: https://startup.dailyrocker.click/
+Simon Link: https://simon.dailyrocker.click/
