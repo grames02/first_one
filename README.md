@@ -68,11 +68,18 @@ Through this experience I realized that I want to do better at organizing my cod
 Here is my website link: https://startup.dailyrocker.click/home.html
 I've also included the updated code for my website pages and their css pages in different pages here on GitHub.
 
+# Inbetween these two deliverables
+## Updating my CSS for my Website
+After getting feedback back for my CSS submission, I decided to make some changes per the recommendations. I went in and tried to make my navigation menu more appealing. I accomplished this by using icons for transportation that I found on Google (and implemented via img tags.)
+
+I also went through and centered heading, and fixed the footer to all be on one line. I'm glad I did, I think it looks much better.
+
 # With the React Phase 1 Deliverable
 ## Main Things I did:
 First of all, I watched the Simon React part 1 video, and followed the necessary steps. Upon completion, I then went back to my code and began to go through a siliar process. At first, I tried to do it all on my own simply through memory. However, I quickly realized that wasn't a very successful strategy. So I rewatched the video, and made necessary adjustments to my own code as I went through.
 
 ## Experience:
+The experience was fairly positive. I mainly utilized resources from Simon, but also had to make some changes. Specifically with things like my 
 
 ## Realizations:
 
