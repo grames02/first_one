@@ -1,0 +1,147 @@
+"JSX:
+
+import React from 'react';
+import './trivia_game.css';
+
+export function Trivia_game() {
+  return (
+    <main className="container-fluid bg-secondary text-center">
+
+      <h1>Trivia Game</h1>
+      <br/>
+      
+        <h1>QUESTION:</h1>
+        <br/><br/>
+      <p>
+        <h1>Billy Joel said an error on his first album made him sound like what animal?</h1>
+      </p>
+      <br/><br/>
+      <br/><br/>
+      <div>
+        <span>Your Response: </span>
+        <input type="text" placeholder="enter here" />
+      </div>
+      <br/>
+      <button type="submit">Submit</button>
+     <br/><br/>
+    </main>
+  );
+}
+__________________________________________________________________________________________________
+CSS:
+.picture-box {
+  height: calc(100px + 1em);
+  margin-bottom: 1em;
+  padding: 0.5em;
+  background: rgb(86, 89, 93);
+  border-radius: 5px;
+}
+
+.quote-box {
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+.author::before {
+  content: " - ";
+}
+
+#picture img {
+  width: 100%;
+  height: 100%;
+}
+_______________________________________________________________________________________
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Game</title>
+    <link rel="icon" href="record_logo_ruT_icon.ico" />
+
+
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="trivia_game.css" />
+
+    <!-- Include bootstrap CSS framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  
+  
+  
+  <body class="bg-dark text-light">
+    <header>
+      <br>
+      <form class="form">
+        <div>
+          <span>@</span>
+          <input type="text" placeholder="your@email.com" />
+        </div>
+        <div>
+          <span>🔒</span>
+          <input type="password" placeholder="password" />
+        </div>
+        <div class="button-line">
+          <button type="submit">Login</button>
+          <button type="submit">Create</button>
+          <button type="submit">Logout</button>
+        </div>
+      </form>
+      <h1 class="top-middle-image">DailyRocker.click<sup>&reg;</sup><br>Current Logged in User:<br>George Ames</h1>
+       <br>
+      <nav>
+        <menu class="nav">
+          <li><a href="home.html"><img src="https://png.pngtree.com/png-vector/20221108/ourmid/pngtree-cartoon-house-illustration-png-image_6434928.png" width="50"></a></li>
+          <li><a href="top_albums.html"><img src= "https://images.vexels.com/content/238073/preview/turntable-record-player-543697.png" width="50"></a></li>
+          <li><a href="past_artists.html"><img src="https://static.vecteezy.com/system/resources/previews/023/985/119/non_2x/trophy-award-cartoon-cute-isolated-clipart-free-png.png" width="50"></a></li>
+          <li><a href="trivia_game.html"><img src="https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-comic-speech-bubbles-with-text-quiz-png-image_4667086.png" width="50"></a></li>
+        </menu>
+      </nav>
+      <br>
+      <img src="record_logo_ruT_icon.ico" width="240" class="top-right-image">
+    </header>
+
+    <main>
+      <h1>Trivia Game</h1>
+      <br>
+      
+        <h1>QUESTION:</h1>
+
+      <p>
+        <h1>Billy Joel said an error on his first album made him sound like what animal?</h1>
+      </p>
+      <br><br>
+      <div>
+        <span>Your Response: </span>
+        <input type="text" placeholder="enter here" />
+      </div>
+      <br>
+      <button type="submit">Submit</button>
+     <br><br>
+    </main>
+
+    <footer>
+      <span class="text-reset">George Ames</span>
+      <a href="https://github.com/grames02/first_one">GitHub</a>
+    </footer>
+  </body>
+</html>
+
+"
