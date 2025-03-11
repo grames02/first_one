@@ -82,7 +82,7 @@ First of all, I watched the Simon React part 1 video, and followed the necessary
 The experience was fairly positive. I mainly utilized resources from Simon, but also had to make some changes. Specifically with things like my file names. In fact one of the challenges I was facing near the end was that my 'top_albums' page wouldn't go through to my React website. After digging deeper, I learned that it had to be Capitalized at the beginning for .jsx.
 
 ## Realizations:
-I realized some other things as well. Mainly that jsx needs to be formatted in a certain way. When I was copying my html's into the respective jsx files, I kept getting a lot of errors. Many of these were due to the fact that I was using "<br><br>", when I should've been using "</br>". Fixing these resulted in my code working.
+I realized some other things as well. Mainly that jsx needs to be formatted in a certain way. When I was copying my html's into the respective jsx files, I kept getting a lot of errors. Many of these were due to the fact that I was using "br", when I should've been using "/br". Fixing these resulted in my code working.
 
 I also made an error in that I forgot to set one of the routes as the default. So when I first published it, there was a 5th page (which displyed little to nothing.) I fixed this by going back into my routes, and setting the home page as the default.
 
