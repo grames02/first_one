@@ -87,5 +87,6 @@ I realized some other things as well. Mainly that jsx needs to be formatted in a
 I also made an error in that I forgot to set one of the routes as the default. So when I first published it, there was a 5th page (which displyed little to nothing.) I fixed this by going back into my routes, and setting the home page as the default.
 
 ## Lesson learned:
+The main lesson I learned was that the devil is in the details. I know I say that a lot, but I think it's an important lesson to learn over and over again (especially within Computer Science.) I also learned that formatting is different between files (especially .jsx).
 
 ## Delivarable:
