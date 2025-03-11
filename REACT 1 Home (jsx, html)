@@ -1,0 +1,135 @@
+"JSX:
+
+import React from 'react';
+
+export function Home() {
+  return (
+    <main className="container-fluid bg-secondary text-center">
+      <h1>Home</h1>
+      <h1>This Week's Artist</h1>
+      <br/>
+      <section>
+          <div className="container">
+            <h1>Billy Joel</h1>
+            <div className="card">
+              <a href="https://en.wikipedia.org/wiki/Billy_Joel">
+                <img src="https://learningleader.com/wp-content/uploads/2022/01/BIlly-Joel-Richard-E-Aaron-Redferns.jpg" width="250" />
+              </a>
+            </div>
+            <div className="card">
+              <img src="https://www.shutterstock.com/image-vector/music-video-play-bar-icon-260nw-2257072159.jpg" width="400" />
+            </div>
+            <div className="card">
+              <a href="https://open.spotify.com/album/3IILMjMMnoN2sKzgesX8KV">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8uU7k5jsTvGoHVHyuWfXlRVs9agVeIN2CSQ&s" width="300"/>
+              </a>
+            </div>
+          </div>
+        </section>
+      
+          <br/>
+
+      <section>
+        <div className="container">
+          <div className="card"><img src="https://banner2.cleanpng.com/20180531/csv/avo3s0rhq.webp" width="200" /></div>
+          <div className="card"><img src="https://www.pngfind.com/pngs/m/190-1900259_dislike-youtube-png-red-facebook-thumbs-down-transparent.png" width="175" /></div>
+        </div>
+      </section>
+  <br/><br/>
+  </main>
+  );
+}
+
+________________________________________________________________________________________________
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8" />
+    <!-- Tell browsers not to scale the viewport automatically -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DailyRocker</title>
+    <link rel="icon" href="record_logo_ruT_icon.ico" />
+    <link rel="stylesheet" href="app.css" />
+
+    <!-- Include bootstrap CSS framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+</head>
+
+
+<body class="bg-dark text-light">
+    <!-- Use header, main, and footer elements to give semantic structure -->
+    <header>
+      <br>
+      <form class="form">
+        <div>
+          <span>@</span>
+          <input type="text" placeholder="your@email.com" />
+        </div>
+        <div>
+          <span>🔒</span>
+          <input type="password" placeholder="password" />
+        </div>
+        <div class="button-line">
+          <button type="submit">Login</button>
+          <button type="submit">Create</button>
+          <button type="submit">Logout</button>
+        </div>
+      </form>
+      <h1 class="top-middle-image">DailyRocker.click<sup>&reg;</sup><br>Current Logged in User:<br>George Ames</h1>
+       <br>
+      <nav>
+        <menu class="nav">
+          <li><a href="home.html"><img src="https://png.pngtree.com/png-vector/20221108/ourmid/pngtree-cartoon-house-illustration-png-image_6434928.png" width="50"></a></li>
+          <li><a href="top_albums.html"><img src= "https://images.vexels.com/content/238073/preview/turntable-record-player-543697.png" width="50"></a></li>
+          <li><a href="past_artists.html"><img src="https://static.vecteezy.com/system/resources/previews/023/985/119/non_2x/trophy-award-cartoon-cute-isolated-clipart-free-png.png" width="50"></a></li>
+          <li><a href="trivia_game.html"><img src="https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-comic-speech-bubbles-with-text-quiz-png-image_4667086.png" width="50"></a></li>
+        </menu>
+      </nav>
+      <br>
+      <img src="record_logo_ruT_icon.ico" width="240" class="top-right-image">
+    </header>
+
+
+
+    <main>
+      <h1>Home</h1>
+      <h1>This Week's Artist</h1>
+      <br>
+      <section>
+        <div>
+          <div class="container">
+            <h1>Billy Joel</h1>
+            <div class="card"><a href="https://en.wikipedia.org/wiki/Billy_Joel"><img src="https://learningleader.com/wp-content/uploads/2022/01/BIlly-Joel-Richard-E-Aaron-Redferns.jpg" width="250"></a></div>
+            <div class="card"><img src="https://www.shutterstock.com/image-vector/music-video-play-bar-icon-260nw-2257072159.jpg" width="400"></div>
+            <div class="card"><a href="https://open.spotify.com/album/3IILMjMMnoN2sKzgesX8KV"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8uU7k5jsTvGoHVHyuWfXlRVs9agVeIN2CSQ&s" width="300"/></a></div>
+          </section>
+          <br>
+
+      <section>
+        <div class="container">
+          <div class="card"><img src="https://banner2.cleanpng.com/20180531/csv/avo3s0rhq.webp" width="200"></div>
+          <div class="card"><img src="https://www.pngfind.com/pngs/m/190-1900259_dislike-youtube-png-red-facebook-thumbs-down-transparent.png" width="175"></div>
+        </div>
+      </section>
+    </main>
+  <br><br>
+  
+  
+  </body>
+
+    
+  <footer>
+    <span class="text-reset">George Ames</span>
+    <a href="https://github.com/grames02/first_one">GitHub</a>
+  </footer>
+</html>
+
+"
