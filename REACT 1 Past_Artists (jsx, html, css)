@@ -1,0 +1,251 @@
+"JSX:
+
+import React from 'react';
+import './past_artists.css';
+
+export function Past_Artists() {
+  return (
+    <main className="container-fluid bg-secondary text-center">
+
+      <h1>Past Artists</h1>
+      <div style={{ textAlign: "center" }}>
+              <br/><br/>
+              <div className="container">
+                <br/><br/>
+                  <div className="card">Bruce Springsteen</div>
+                  <div className="card">85/100</div>
+                  <div className="card"><img src="https://npr.brightspotcdn.com/dims4/default/c2c61aa/2147483647/strip/true/crop/599x596+0+0/resize/880x876!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F46%2Fda%2Ff5a5231149c8bd622cbc659f5e2f%2Ftryiimrjekgwrth2fo2a.jpg" width="250"/></div>
+                </div>
+
+                <br/><br/>
+              <div className="container">
+                  <div className="card">Billy Joel</div>
+                  <div className="card">90/100</div>
+                  <div className="card"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Thestranger1977.jpg/220px-Thestranger1977.jpg" width="250"/></div>
+              </div>
+
+              <br/><br/>
+              <div className="container">
+                <div className="card">The Beatles</div>
+                <div className="card">98/100</div>
+                <div className="card"><img src="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg" width="250"/></div>
+              </div>
+
+              <br/><br/>
+              <div className="container">
+                <div className="card">Fleetwood Mac</div>
+                <div className="card">89/100</div>
+                <div className="card"><img src="https://media.npr.org/assets/img/2013/01/29/highres-fleetwood-mac-rumours_sq-496d22b156d14a8c7e5fbfd77ab1d54790d019b3.jpg?s=1100&c=50&f=jpeg" width="250"/></div>
+              </div>
+
+              <br/><br/>
+              <div className="container">
+                <div className="card">The Beach Boys</div>
+                <div className="card">86/100</div>
+                <div className="card"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/PetSoundsCover.jpg/220px-PetSoundsCover.jpg" width="250"/></div>
+              </div>
+
+              <br/><br/>
+              <div className="container">
+                <div className="card">Michael Jackson</div>
+                <div className="card">93/100</div>
+                <div className="card"><img src="https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png" width="250"/></div>
+              </div>
+
+              <br/><br/>
+              <div className="container">
+                <div className="card">Simon and Garfunkel</div>
+                <div className="card">79/100</div>
+                <div className="card"><img src="https://upload.wikimedia.org/wikipedia/en/4/41/Simon_and_Garfunkel%2C_Bridge_over_Troubled_Water_%281970%29.png" width="250"/></div>
+              </div>
+
+              <br/><br/>
+              <div className="container">
+                <div className="card">Oasis</div>
+                <div className="card">84/100</div>
+                <div className="card"><img src="https://upload.wikimedia.org/wikipedia/en/d/d4/OasisDefinitelyMaybealbumcover.jpg" width="250"/></div>
+              </div>
+
+              <br/><br/>
+              <div className="container">
+                <div className="card">The Killers</div>
+                <div className="card">86/100</div>
+                <div className="card"><img src="https://upload.wikimedia.org/wikipedia/en/1/17/The_Killers_-_Hot_Fuss.png" width="250"/></div>
+              </div>
+
+              <br/><br/>
+              <div className="container">
+                <div className="card">Electric Light Orchestra</div>
+                <div className="card">89/100</div>
+                <div className="card"><img src="https://upload.wikimedia.org/wikipedia/en/5/5a/ELO-Out_of_the_Blue_Lp.jpg" width="250"/></div>
+              </div>
+  </div>
+      <br/><br/>
+  </main>
+  );
+}
+
+__________________________________________________________________________________________________________________________________________
+CSS:
+
+main {
+  position: relative;
+}
+
+section {
+  table-layout: auto;
+  border: 1cap;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+___________________________________________________________________________________________________________________________________________
+HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Past Artists</title>
+   <link rel="icon" href="record_logo_ruT_icon.ico" />
+
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="scores.css" />
+
+    <!-- Include bootstrap CSS framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  
+  
+  
+  
+  
+  <body class="bg-dark text-light">
+    <header>
+      <br>
+      <form class="form">
+        <div>
+          <span>@</span>
+          <input type="text" placeholder="your@email.com" />
+        </div>
+        <div>
+          <span>🔒</span>
+          <input type="password" placeholder="password" />
+        </div>
+        <div class="button-line">
+          <button type="submit">Login</button>
+          <button type="submit">Create</button>
+          <button type="submit">Logout</button>
+        </div>
+      </form>
+      <h1 class="top-middle-image">DailyRocker.click<sup>&reg;</sup><br>Current Logged in User:<br>George Ames</h1>
+       <br>
+      <nav>
+        <menu class="nav">
+          <li><a href="home.html"><img src="https://png.pngtree.com/png-vector/20221108/ourmid/pngtree-cartoon-house-illustration-png-image_6434928.png" width="50"></a></li>
+          <li><a href="top_albums.html"><img src= "https://images.vexels.com/content/238073/preview/turntable-record-player-543697.png" width="50"></a></li>
+          <li><a href="past_artists.html"><img src="https://static.vecteezy.com/system/resources/previews/023/985/119/non_2x/trophy-award-cartoon-cute-isolated-clipart-free-png.png" width="50"></a></li>
+          <li><a href="trivia_game.html"><img src="https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-comic-speech-bubbles-with-text-quiz-png-image_4667086.png" width="50"></a></li>
+        </menu>
+      </nav>
+      <br>
+      <img src="record_logo_ruT_icon.ico" width="240" class="top-right-image">
+    </header>
+
+    <main>
+      <h1>Past Artists</h1>
+      <center>
+      <br><br>
+      <div class="container">
+        <br><br>
+          <div class="card">Bruce Springsteen</div>
+          <div class="card">85/100</div>
+          <div class="card"><img src="https://npr.brightspotcdn.com/dims4/default/c2c61aa/2147483647/strip/true/crop/599x596+0+0/resize/880x876!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F46%2Fda%2Ff5a5231149c8bd622cbc659f5e2f%2Ftryiimrjekgwrth2fo2a.jpg" width="250"/></div>
+        </div>
+
+        <br><br>
+      <div class="container">
+          <div class="card">Billy Joel</div>
+          <div class="card">90/100</div>
+          <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Thestranger1977.jpg/220px-Thestranger1977.jpg" width="250"/></div>
+      </div>
+
+      <br><br>
+      <div class="container">
+        <div class="card">The Beatles</div>
+        <div class="card">98/100</div>
+        <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg" width="250"/></div>
+      </div>
+
+      <br><br>
+      <div class="container">
+        <div class="card">Fleetwood Mac</div>
+        <div class="card">89/100</div>
+        <div class="card"><img src="https://media.npr.org/assets/img/2013/01/29/highres-fleetwood-mac-rumours_sq-496d22b156d14a8c7e5fbfd77ab1d54790d019b3.jpg?s=1100&c=50&f=jpeg" width="250"/></div>
+      </div>
+
+      <br><br>
+      <div class="container">
+        <div class="card">The Beach Boys</div>
+        <div class="card">86/100</div>
+        <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/PetSoundsCover.jpg/220px-PetSoundsCover.jpg" width="250"/></div>
+      </div>
+
+      <br><br>
+      <div class="container">
+        <div class="card">Michael Jackson</div>
+        <div class="card">93/100</div>
+        <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png" width="250"/></div>
+      </div>
+
+      <br><br>
+      <div class="container">
+        <div class="card">Simon and Garfunkel</div>
+        <div class="card">79/100</div>
+        <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/4/41/Simon_and_Garfunkel%2C_Bridge_over_Troubled_Water_%281970%29.png" width="250"/></div>
+      </div>
+
+      <br><br>
+      <div class="container">
+        <div class="card">Oasis</div>
+        <div class="card">84/100</div>
+        <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/d/d4/OasisDefinitelyMaybealbumcover.jpg" width="250"/></div>
+      </div>
+
+      <br><br>
+      <div class="container">
+        <div class="card">The Killers</div>
+        <div class="card">86/100</div>
+        <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/1/17/The_Killers_-_Hot_Fuss.png" width="250"/></div>
+      </div>
+
+      <br><br>
+      <div class="container">
+        <div class="card">Electric Light Orchestra</div>
+        <div class="card">89/100</div>
+        <div class="card"><img src="https://upload.wikimedia.org/wikipedia/en/5/5a/ELO-Out_of_the_Blue_Lp.jpg" width="250"/></div>
+      </div>
+    </center>
+      <br><br>
+    </main>
+
+
+
+
+    <footer>
+      <span class="text-reset">George Ames</span>
+      <a href="https://github.com/grames02/first_one">GitHub</a>
+    </footer>
+  </body>
+</html>
+
+"
