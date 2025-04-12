@@ -99,7 +99,10 @@ Simon Link: https://simon.dailyrocker.click/
 ## Disclaimer:
 First off, I want to note the obvious. Yes, I am very late to this, however, I have been working on my website throughout the last week. I've been able to add just about all of the reactions I want (as of writing this, I'm just doing the finishing touches.) Lesson learned, stay on top of things, and don't fall behind. I will ensure to have all of my assignments submitted by the final deadline though. For starters, I'll go ahead and explain the main things I did below.
 
-## Reaction Implementations:
+## Reaction Implementations, New Artist Every Day:
 I went through the list of my desired specs and began to break things down one at a time. First of all, my website will require having a different Musician every day. Depending on the musician, multiple pages will change. So I decided it'd make the most sense to make one file that would select the musician, and then connect it to the main app.jsx file. For transparency, I did google to learn what functions can be utilized regarding content that changes daily. I found my answer with the syntax of: Date().
 
 From here, I created a file known as: MusiciansContext.jsx. This file has 10 artists put into a list, and via utilizing the Date() syntax, I was able to create a function that selects a new artist from the list of 10 at random (while avoiding to choose the previous day's musician.) Once again, for transparency, I did troubleshoot with AI, but it did not write my code for me.
+
+## Reaction Implementations, Artist Context:
+From here, I knew that I wanted to provide data about each artist. So I once again made another file that I connected to app.jsx. This file was known as: ArtistData.jsx.
