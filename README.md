@@ -113,3 +113,5 @@ This file works in tandem with the MusiciansContext file. As that file picks a r
 Now from this point on, I am currently working on my website. The next implementation I am going to do, is the voting system. I will accomplish this by making making two buttons, which will be clickable (they can only be clicked once.)
 
 After some trial and error, I got it to work. I made it so that whenever you click on one button, it'll make the other score 0. That way they can only vote yes or no once, and can change their mind if they want. Next what I need to do is transfer this over to the Past musician page, which will display the Artist scores and such. I also need to implement the login information. As I want to limit it to scores via user.
+
+OK. This took a lot of reworking, and I definitely forgot to commit along the way. In essence though, I first off made the Login implementation (via storing the Login in local storage), I have yet to add in the create or password functionallity, but we'll get there.
