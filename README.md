@@ -94,3 +94,7 @@ Here's the link to my website. I've also included all of my code in different fi
 
 Website link: https://startup.dailyrocker.click/
 Simon Link: https://simon.dailyrocker.click/
+
+# With the React Phase 2 Deliverable
+## Disclaimer:
+First off, I want to note the obvious. Yes, I am very late to this, however, I have been working on my website throughout the last week. I've been able to add just about all of the reactions I want (as of writing this, I'm just doing the finishing touches.) Lesson learned, stay on top of things, and don't fall behind. I will ensure to have all of my assignments submitted by the final deadline though. For starters, I'll go ahead and explain the main things I did below.
