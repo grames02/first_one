@@ -105,4 +105,6 @@ I went through the list of my desired specs and began to break things down one a
 From here, I created a file known as: MusiciansContext.jsx. This file has 10 artists put into a list, and via utilizing the Date() syntax, I was able to create a function that selects a new artist from the list of 10 at random (while avoiding to choose the previous day's musician.) Once again, for transparency, I did troubleshoot with AI, but it did not write my code for me.
 
 ## Reaction Implementations, Artist Context:
-From here, I knew that I wanted to provide data about each artist. So I once again made another file that I connected to app.jsx. This file was known as: ArtistData.jsx.
+From here, I knew that I wanted to provide data about each artist. So I once again made another file that I connected to app.jsx. This file was known as: ArtistData.jsx. Within this file, I made one big object that housed all of the different artist information. It utilized the same 10 artists as 'keys' to their associating data (things such as bio, trivia question, trivia answer, a url for their image, etc.) So this essentially served as the hub for all the information for each artist.
+
+This file works in tandem with the MusiciansContext file. As that file picks a random musician for the day, the ArtistData file, will feed in all of the associating data.
