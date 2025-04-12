@@ -108,3 +108,8 @@ From here, I created a file known as: MusiciansContext.jsx. This file has 10 art
 From here, I knew that I wanted to provide data about each artist. So I once again made another file that I connected to app.jsx. This file was known as: ArtistData.jsx. Within this file, I made one big object that housed all of the different artist information. It utilized the same 10 artists as 'keys' to their associating data (things such as bio, trivia question, trivia answer, a url for their image, etc.) So this essentially served as the hub for all the information for each artist.
 
 This file works in tandem with the MusiciansContext file. As that file picks a random musician for the day, the ArtistData file, will feed in all of the associating data. Also, another thing I did here was add in Spotify links. These Spotify Links enable the user to hear a snippet of the song I selected. I simply went to spotify and copied over the embedded links. They worked perfectly (as long as I included '\embed' in the url.)
+
+## Further Development
+Now from this point on, I am currently working on my website. The next implementation I am going to do, is the voting system. I will accomplish this by making making two buttons, which will be clickable (they can only be clicked once.)
+
+After some trial and error, I got it to work. I made it so that whenever you click on one button, it'll make the other score 0. That way they can only vote yes or no once, and can change their mind if they want. Next what I need to do is transfer this over to the Past musician page, which will display the Artist scores and such. I also need to implement the login information. As I want to limit it to scores via user.
