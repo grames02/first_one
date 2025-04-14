@@ -121,3 +121,4 @@ After Checking, I realized that I should go ahead and put it in. So I did so, ut
 I believe that is all I needed for the current deliverable. For reference to my code, I'll add in the files to my repository, they will all be marked "React Pt 2".
 
 # Startup Service
+This one was fairly challenging at first. I worked on it late into the night on Saturday, and most of today (Sunday). The main challenge I had was connecting the third-party app I wanted. Eventually I determined I'd just use the same one Simon did (the quote one.) I believe I did it correctly. The other main part was configuring my backend. I copied off of Simon, and made changes based on what I'll need to connect. Those main things being votes for individual artists & users/passwords. For now, it's just using system memory. I'm looking forward to the next deliverable to get the database all working.
