@@ -119,3 +119,5 @@ OK. This took a lot of reworking, and I definitely forgot to commit along the wa
 After Checking, I realized that I should go ahead and put it in. So I did so, utilizing local storage again. I recognize that this is temporary, and will likely be adjusted in the next deliverable. The process was fairly straightforward, one difference I did involve was making an "INVALID LOGIN" appear if they didn't use the proper password, or if the user hadn't been created before. I utilized this with the Alert function.
 
 I believe that is all I needed for the current deliverable. For reference to my code, I'll add in the files to my repository, they will all be marked "React Pt 2".
+
+# Startup Service
