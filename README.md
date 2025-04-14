@@ -140,4 +140,9 @@ Per the requirements in the assignment
 In this deliverable, the main challenges I faced were knowing how to setup the backend. It took me a while, however once I started looking at Simon it made a lot more sense.
 
 # Database Deliverable
+Ok, I'm wrapping up on my Database Deliverable. It took some time, but I've got most of it done. I worked on it from last night (after submitting the Startup Service), up until now (about 5 oclock 4/14/2025.) There is one error I keep on encounterring with my website, but I'll address that after I go over what I've done so far.
 
+## What I've Done so far
+So for starters, I downloaded the Simon files and compared my own files with the ones on there, especially the database file. I tried to use a similar layout as Simon, while I made a couple of changes.
+
+## Problem
