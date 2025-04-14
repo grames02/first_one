@@ -122,3 +122,16 @@ I believe that is all I needed for the current deliverable. For reference to my 
 
 # Startup Service
 This one was fairly challenging at first. I worked on it late into the night on Saturday, and most of today (Sunday). The main challenge I had was connecting the third-party app I wanted. Eventually I determined I'd just use the same one Simon did (the quote one.) I believe I did it correctly. The other main part was configuring my backend. I copied off of Simon, and made changes based on what I'll need to connect. Those main things being votes for individual artists & users/passwords. For now, it's just using system memory. I'm looking forward to the next deliverable to get the database all working.
+
+Per the requirements in the assignment
+1. Calling a third party service from your frontend.
+-Answer: Yes! I called the quote service using fetch, similar to how Simon utilized that one.
+
+2. Creating a backend service using Node.js.
+-Answer: Yes! I made a file called index.js. Which I'll upload to the respository. It'll be marked with: Startup Service
+
+3. Providing authentication endpoints from your backend service.
+-Answer: Yes! Those are listed inside of index.js. For my login, etc.
+
+4. Providing application endpoints from your backend service.
+-Answer:
