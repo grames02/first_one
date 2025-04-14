@@ -134,4 +134,10 @@ Per the requirements in the assignment
 -Answer: Yes! Those are listed inside of index.js. For my login, etc.
 
 4. Providing application endpoints from your backend service.
--Answer:
+-Answer: My index.js has a space for my votes to be redirected too (now I just need to add the database)
+
+## Challenges
+In this deliverable, the main challenges I faced were knowing how to setup the backend. It took me a while, however once I started looking at Simon it made a lot more sense.
+
+# Database Deliverable
+
