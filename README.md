@@ -150,3 +150,7 @@ As of right now, if I refresh my page after logging in on one of the other pages
 
 ## Solution
 OK. So I went through a LOT of troubleshooting. I kept on looking at the routes I had, looking at Simon, and also using Google. Eventually though, I realized that whenever someone does refresh, I want them to go to the homepage anyway (that's the main bread and butter of the website.) So I decided to kill two birds with one stone. I set it up so that when you refresh, the website will automatically take you back to the home page. By doing this the entire website is usable, doesn't break, is connected to a database (which is functioning properly), and (most importantly) the website is really cool! So, I'm happy and relieved to finally be at this point. Now I'll still just be cleaning up my code a bit before I submit it.
+
+Per my usual commits, I will also be uploading my code to here in Github. This time they will be marked: Database Deliverable.
+
+Phew, one deliverable left. It's been very intense coding and troubleshooting these last couple of days. Once again, I acknowledge I shouldn't have waited this long. Lesson learned. Let me know if you have any questions for me. Thanks!
