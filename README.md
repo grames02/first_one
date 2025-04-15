@@ -160,4 +160,6 @@ Quick side note! I was about to go through and submit when the TA notified me of
 # WebSocket Deliverable
 Alrighty, here we are on the last deliverable. I'm definitely cutting it close with getting this done in time, but I think I can do it. This time the very first thing I did was go through the Simon WebSocket example AND I went ahead and uploaded it to simon.dailyrocker.click. So that feels nice to already have done. Now I'm gonna look closer at the specifications, and figure out what exactly I have to do.
 
-So, I realized first off. Download wb in my service folder. Coolio, did that!
+So, I realized first off. Download wb in my service folder. Coolio, did that! After that, I went in and mainly messed around with the backend (aka my index.js) ad my frontend (specifically my app.jsx.) From here, I needed to decide what I wanted WebSocket to do. So after thinking about it, I decided to make it display the votes that have taken place, on each page. I've been messing around trying to make it work, but no luck thus far. Oh, I also updated the vite file, per the instructions.
+
+I still haven't been able to find the problem with making it appear on my frontend. I'll work more on it tomorrow, more then.
