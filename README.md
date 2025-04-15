@@ -147,3 +147,6 @@ So for starters, I downloaded the Simon files and compared my own files with the
 
 ## Problem
 As of right now, if I refresh my page after logging in on one of the other pages, my website crashes. I think it's because I originally had one idea of how to do the routing/organization in my code, but over time I changed it and things are still inconsistent. So before I submit this deliverable, I'll be going through my code and cleaning it all up. Because the database does get data stored, and the website is functional. It's just that as of right now, it's also breakable (so, I want to fix that.)
+
+## Solution
+OK. So I went through a LOT of troubleshooting. I kept on looking at the routes I had, looking at Simon, and also using Google. Eventually though, I realized that whenever someone does refresh, I want them to go to the homepage anyway (that's the main bread and butter of the website.) So I decided to kill two birds with one stone. I set it up so that when you refresh, the website will automatically take you back to the home page. By doing this the entire website is usable, doesn't break, is connected to a database (which is functioning properly), and (most importantly) the website is really cool! So, I'm happy and relieved to finally be at this point. Now I'll still just be cleaning up my code a bit before I submit it.
