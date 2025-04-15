@@ -159,3 +159,5 @@ Quick side note! I was about to go through and submit when the TA notified me of
 
 # WebSocket Deliverable
 Alrighty, here we are on the last deliverable. I'm definitely cutting it close with getting this done in time, but I think I can do it. This time the very first thing I did was go through the Simon WebSocket example AND I went ahead and uploaded it to simon.dailyrocker.click. So that feels nice to already have done. Now I'm gonna look closer at the specifications, and figure out what exactly I have to do.
+
+So, I realized first off. Download wb in my service folder. Coolio, did that!
