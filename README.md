@@ -154,3 +154,5 @@ OK. So I went through a LOT of troubleshooting. I kept on looking at the routes 
 Per my usual commits, I will also be uploading my code to here in Github. This time they will be marked: Database Deliverable.
 
 Phew, one deliverable left. It's been very intense coding and troubleshooting these last couple of days. Once again, I acknowledge I shouldn't have waited this long. Lesson learned. Let me know if you have any questions for me. Thanks!
+
+Quick side note! I was about to go through and submit when the TA notified me of needing to deploy Simon on my past deliverables. So I went ahead and did all of those, and just a second ago deployed Simon for it's deliverable. I made an additional Mongo account and everything, so now it's connected to a database.
