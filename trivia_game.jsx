@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'; // Don't forget to import useContext
+import React, { useContext, useState } from "react";
 import './trivia_game.css';
 import { MusicianContext } from "../MusicianContext"; // Make sure you're accessing the context
 import { artistData } from "../ArtistData"; // Import the artistData object
@@ -9,6 +9,11 @@ export function Trivia_game() {
   
   // Access the artist data for the selected musician
   const artistInfo = artistData[musician];
+
+  // Check if artistInfo exists to prevent crashes
+  if (!artistInfo) {
+    return <p>Error: Invalid musician selected</p>;
+  }
 
   // State to store the user's answer and feedback
   const [userAnswer, setUserAnswer] = useState("");
@@ -44,14 +49,14 @@ export function Trivia_game() {
         />
       </div>
       <br />
-      <button type="submit" onClick={handleSubmit}>Submit</button>
+      <button type="submit" onClick={handleSubmit} className="btn btn-primary">Submit</button>
       <br />
       <br />
       <br />
       <br />
       <br />
       {/* Display feedback after submitting the answer */}
-      {feedback && <p>{feedback}</p>}
+      {feedback && <p className="feedback">{feedback}</p>}
       <br />
       <br />
       <br />

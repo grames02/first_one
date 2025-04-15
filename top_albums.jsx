@@ -1,6 +1,7 @@
 import React from 'react';
 import './top_albums.css';
 
+
 export function Top_albums() {
   return (
     <main className="container-fluid bg-secondary text-center">

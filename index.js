@@ -1,104 +1,93 @@
+const express = require('express');
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcryptjs');
-const express = require('express');
 const uuid = require('uuid');
+const path = require('path');
+const DB = require('./database');
+
 const app = express();
-
 const authCookieName = 'token';
-
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
+// ---------- MIDDLEWARE ----------
 app.use(express.json());
 app.use(cookieParser());
-app.use(express.static('public'));
-
-let users = []; // { email, password (hashed), token }
-let votes = []; // { userEmail, artist, vote } where vote is 'yes' or 'no'
+app.use(express.static(path.join(__dirname, 'public'))); // Serving static assets from 'public' directory
 
 // ---------- AUTH ROUTES ----------
-
-// CreateAuth a new user
 app.post('/auth/create', async (req, res) => {
-  if (await findUser('email', req.body.email)) {
+  const existingUser = await DB.getUser(req.body.email);
+  if (existingUser) {
     res.status(409).send({ msg: 'Existing user' });
   } else {
-    const user = await createUser(req.body.email, req.body.password);
+    const hashed = await bcrypt.hash(req.body.password, 10);
+    const user = {
+      email: req.body.email,
+      password: hashed,
+      token: uuid.v4(),
+    };
 
+    await DB.addUser(user);
     setAuthCookie(res, user.token);
     res.send({ email: user.email });
   }
 });
 
-// GetAuth login an existing user
 app.post('/auth/login', async (req, res) => {
-  const user = await findUser('email', req.body.email);
-  if (user) {
-    if (await bcrypt.compare(req.body.password, user.password)) {
-      user.token = uuid.v4();
-      setAuthCookie(res, user.token);
-      res.send({ email: user.email });
-      return;
-    }
+  const user = await DB.getUser(req.body.email);
+  if (user && await bcrypt.compare(req.body.password, user.password)) {
+    user.token = uuid.v4();
+    await DB.updateUser(user);
+    setAuthCookie(res, user.token);
+    res.send({ email: user.email });
+  } else {
+    res.status(401).send({ msg: 'Unauthorized' });
   }
-  res.status(401).send({ msg: 'Unauthorized' });
 });
 
-// DeleteAuth logout a user
 app.delete('/auth/logout', async (req, res) => {
-  const user = await findUser('token', req.cookies[authCookieName]);
+  const user = await DB.getUserByToken(req.cookies[authCookieName]);
   if (user) {
     delete user.token;
+    await DB.updateUser(user);
   }
   res.clearCookie(authCookieName);
   res.status(204).end();
 });
 
-
-
-
-
-// ---------- MIDDLEWARE ----------
-function authMiddleware(req, res, next) {
-  const token = req.cookies[authCookieName];
-  const user = users.find(u => u.token === token);
-  if (!user) return res.status(401).send({ msg: 'Unauthorized' });
-  req.user = user;
-  next();
-}
-
-
-
-
-
+// ---------- AUTH MIDDLEWARE ----------
+const verifyAuth = async (req, res, next) => {
+  const user = await DB.getUserByToken(req.cookies[authCookieName]);
+  if (user) {
+    req.user = user;
+    next();
+  } else {
+    res.status(401).send({ msg: 'Unauthorized' });
+  }
+};
 
 // ---------- VOTE ROUTES ----------
-
-// Get vote for an artist
-app.get('/api/votes/:artist', authMiddleware, (req, res) => {
-  const artist = req.params.artist;
-  const vote = votes.find(v => v.userEmail === req.user.email && v.artist === artist);
+app.get('/api/votes/:artist', verifyAuth, async (req, res) => {
+  const vote = await DB.getUserVote(req.user.email, req.params.artist);
   res.send({ vote: vote?.vote || null });
 });
 
-// Submit vote
-app.post('/api/votes', authMiddleware, (req, res) => {
+app.post('/api/votes', verifyAuth, async (req, res) => {
   const { artist, vote } = req.body;
-  const existing = votes.find(v => v.userEmail === req.user.email && v.artist === artist);
-
-  if (existing) {
-    existing.vote = vote; // Update
-  } else {
-    votes.push({ userEmail: req.user.email, artist, vote }); // New
+  if (!artist || !vote) {
+    return res.status(400).send({ msg: 'Missing artist or vote' });
   }
 
+  await DB.saveOrUpdateVote(req.user.email, artist, vote);
   res.send({ msg: 'Vote recorded', artist, vote });
 });
 
+app.get('/api/vote-totals', async (req, res) => {
+  const results = await DB.getVoteTotals();
+  res.send(results);
+});
 
-
-
-
-// ---------- HELPERS ----------
+// ---------- HELPER ----------
 function setAuthCookie(res, authToken) {
   res.cookie(authCookieName, authToken, {
     secure: true,
@@ -107,18 +96,13 @@ function setAuthCookie(res, authToken) {
   });
 }
 
-const path = require("path");
+// ---------- FRONTEND ROUTING ----------
+app.use(express.static(path.join(__dirname, '..')));
 
-// Serve static files from the Vite build
-app.use(express.static(path.join(__dirname, 'dist')));
-
-// Catch-all route: redirect everything else to index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+  res.redirect('/');
 });
 
-
-// ---------- START SERVER ----------
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Listening on port ${port}`);
 });
