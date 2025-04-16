@@ -169,4 +169,20 @@ I still haven't been able to find the problem with making it appear on my fronte
 
 ## Next Day, 4/15/2025
 
-Ok, I'm back on the grind. Opening up my Website files now, and hopefully I can finish it up now.
+Ok, I'm back on the grind. Opening up my Website files now, and hopefully I can finish it up now. They are: 
+DONE - Backend listens for WebSocket connection
+- I connected my backend to WebSocket
+  
+DONE - Frontend makes WebSocket connection
+- I tested this myself. Going into the Developer tab of my website, I could see a message going back and forth between the frontend and WebSocket.
+
+DONE - Data sent over WebSocket connection
+- I have the live votes going over WebSocket
+
+DONE - WebSocket data displayed in the application interface
+- The live votes are displayed in the footer, on every page as well.
+
+DONE - The application is fully functional. There are no mocks or placeholder features.
+- I believe that it is all done. There's no features that don't work, and it's all operational.
+
+Alrighty, that should be all from me. I did all the pre-requisites as well (including uploading Simon) I'll upload my code to GitHub per usual. This time it'll be marked: WebSocket Deliverable. Thanks for a great semester, bye!
