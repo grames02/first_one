@@ -57,6 +57,7 @@ export function Home() {
         good: voteType === "yes" ? 1 : 0,
         no: voteType === "no" ? 1 : 0,
       });
+      window.location.reload();
     } else {
       alert("Failed to submit vote");
     }

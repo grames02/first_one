@@ -4,6 +4,7 @@ const bcrypt = require('bcryptjs');
 const uuid = require('uuid');
 const path = require('path');
 const DB = require('./database');
+const WebSocket = require('ws'); // Importing the ws package for WebSockets
 
 const app = express();
 const authCookieName = 'token';
@@ -66,6 +67,24 @@ const verifyAuth = async (req, res, next) => {
   }
 };
 
+// ---------- WebSocket Setup ----------
+const wss = new WebSocket.Server({ noServer: true });
+const clients = new Set();
+
+wss.on('connection', (ws) => {
+  console.log('WebSocket connected');
+  clients.add(ws);
+
+  ws.on('message', (message) => {
+    console.log('Received message:', message);
+  });
+
+  ws.on('close', () => {
+    clients.delete(ws);
+    console.log('WebSocket closed');
+  });
+});
+
 // ---------- VOTE ROUTES ----------
 app.get('/api/votes/:artist', verifyAuth, async (req, res) => {
   const vote = await DB.getUserVote(req.user.email, req.params.artist);
@@ -80,6 +99,15 @@ app.post('/api/votes', verifyAuth, async (req, res) => {
 
   await DB.saveOrUpdateVote(req.user.email, artist, vote);
   res.send({ msg: 'Vote recorded', artist, vote });
+
+  // Broadcast updated vote totals after saving
+  const results = await DB.getVoteTotals();
+  const message = JSON.stringify({ voteTotals: results });
+  for (const client of clients) {
+    if (client.readyState === WebSocket.OPEN) {
+      client.send(message);
+    }
+  }
 });
 
 app.get('/api/vote-totals', async (req, res) => {
@@ -87,22 +115,34 @@ app.get('/api/vote-totals', async (req, res) => {
   res.send(results);
 });
 
-// ---------- HELPER ----------
-function setAuthCookie(res, authToken) {
-  res.cookie(authCookieName, authToken, {
-    secure: true,
-    httpOnly: true,
-    sameSite: 'strict',
-  });
-}
+// ---------- SERVER SETUP ----------
+app.server = app.listen(port, () => {
+  console.log(`Listening on port ${port}`);
+});
 
-// ---------- FRONTEND ROUTING ----------
-app.use(express.static(path.join(__dirname, '..')));
+app.server.on('upgrade', (request, socket, head) => {
+  if (request.url.startsWith('/ws')) {
+    wss.handleUpgrade(request, socket, head, (ws) => {
+      wss.emit('connection', ws, request);
+    });
+  } else {
+    socket.destroy();
+  }
+});
 
+// Serve the frontend from the root directory
+app.use(express.static(path.join(__dirname, '..', 'public')));
+
+// Catch-all: redirect any unknown route to home page
 app.get('*', (req, res) => {
   res.redirect('/');
 });
 
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Listening on port ${port}`);
-});
+// ---------- HELPER ----------
+function setAuthCookie(res, authToken) {
+  res.cookie(authCookieName, authToken, {
+    secure: true, // Use secure cookies (only on HTTPS)
+    httpOnly: true,
+    sameSite: 'strict',
+  });
+}
